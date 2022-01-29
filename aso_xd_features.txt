@@ -1,0 +1,24 @@
+[h1]Astro's Stellaris Overhaul - Xeno Diplomacy[/h1]
+This mod is intended to make interacting with other empires more interesting.
+Note: Should be compatible with virtually any other mod.
+[h2]Feature Summary[/h2]
+[h3]Vanilla Overwrites[/h3]
+- common/defines/00_defines.txt
+[list]
+[*]	Increased minimum distance to be diplomatically relevant.
+[*] Inceased maximum border friction.
+[*] Halved Galactic Community cooldowns.
+[*] Increased max # of favors, and max # favors per resolutiopn.
+[*] AI is more likely to leave Galactic Community if in breach of multiple resolutions/
+[*] AI will send trade offers more often.
+[*] Broken trade deals affect AI opinion more.
+[*] AI is more aggressive, especially when boxed in.
+[*] AI is more likely to accept Vassalization demands.
+[*] AI is more likely to intervene in wars.
+[*] AI may claim systems further away.
+[*] AI won't repeat proposals for 10 years (instead of one year)
+[/list]
+- common/diplomatic_actions/00_actions.txt
+[list]
+[*]	AI will no longer integrate vassals that are played by humans.
+[/list]

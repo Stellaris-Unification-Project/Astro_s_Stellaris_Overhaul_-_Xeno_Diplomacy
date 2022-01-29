@@ -1,0 +1,115 @@
+	NGameplay = {
+#		RELEVANT_DISTANCE = 150				# Within this distance we're considered to be diplomatically relevant
+		RELEVANT_DISTANCE = 300				# Within this distance we're considered to be diplomatically relevant
+
+#		MAX_FRICTION 						= 100	# Max friction (total)
+		MAX_FRICTION 						= 200	# Max friction (total)
+
+#		FRICTION_FROM_BORDERING_SYSTEM 		= 5		# Friction for each bordering system
+		FRICTION_FROM_BORDERING_SYSTEM 		= 10	# Friction for each bordering system
+
+#		RESOLUTION_VOTE_TIMER = 1440					# number of days a resolution will be on the senate floor before being passed/failed
+		RESOLUTION_VOTE_TIMER = 720						# number of days a resolution will be on the senate floor before being passed/failed
+
+#		SENATE_RECESS_TIMER = 720						# number of days until the next proposed resolution will be put on the floor after the current vote
+		SENATE_RECESS_TIMER = 360						# number of days until the next proposed resolution will be put on the floor after the current vote
+
+#		CHANGE_VOTE_COOLDOWN = 120						# number of days after voting in a resolution before you can change your vote
+		CHANGE_VOTE_COOLDOWN = 360						# number of days after voting in a resolution before you can change your vote
+
+#		CATEGORY_VOTE_COOLDOWN = 2520					# time before another resolution in a given category can proposed again
+		CATEGORY_VOTE_COOLDOWN = 1260					# time before another resolution in a given category can proposed again
+
+#		TYPE_VOTE_COOLDOWN = 5040						# time before a referendum of a given type can be proposed again
+		TYPE_VOTE_COOLDOWN = 2520						# time before a referendum of a given type can be proposed again
+
+#		VETO_COOLDOWN = 1800							# time before a country can enact another veto
+		VETO_COOLDOWN = 900								# time before a country can enact another veto
+
+#		EMERGENCY_MEASURES_COOLDOWN = 7200				# time before a country can propose another emergency measure
+		EMERGENCY_MEASURES_COOLDOWN = 3600				# time before a country can propose another emergency measure
+
+#		FAVOR_CAP							= 10		# Max amount of favors from same empire that can be stored
+		FAVOR_CAP							= 20		# Max amount of favors from same empire that can be stored
+
+#		FAVORS_PER_RESOLUTION_CAP			= 100		# Max amount of favors that can be used for a resolution
+		FAVORS_PER_RESOLUTION_CAP			= 200		# Max amount of favors that can be used for a resolution
+	}
+
+	NAI = {
+
+#		AI_IN_BREACH_THRESHOLD = 3					# AI will consider leaving the community ( and wont try to join it either ) if theyre in breach of this many resolutions
+		AI_IN_BREACH_THRESHOLD = 2					# AI will consider leaving the community ( and wont try to join it either ) if theyre in breach of this many resolutions
+
+#		AI_TRADE_INTERVAL = 5000						# the higher this is the less often the AI will offer trades
+		AI_TRADE_INTERVAL = 2500						# the higher this is the less often the AI will offer trades
+
+#		BROKEN_TRADE_DEAL_FACTOR = 0.5				# How much does broken trade deal affect opinion (based on value of deal)
+		BROKEN_TRADE_DEAL_FACTOR = 1.0				# How much does broken trade deal affect opinion (based on value of deal)
+
+#		AI_AGGRESSIVENESS_LOW_MULT = 0.5
+		AI_AGGRESSIVENESS_LOW_MULT = 1.0
+
+#		AI_AGGRESSIVENESS_HIGH_MULT = 2.0
+		AI_AGGRESSIVENESS_HIGH_MULT = 4.0
+
+#		AI_AGGRESSIVENESS_BASE = 25			# Base chance AI will declare a war (multiplied by personality aggressiveness score)
+		AI_AGGRESSIVENESS_BASE = 50			# Base chance AI will declare a war (multiplied by personality aggressiveness score)
+
+#		AI_AGGRESSIVENESS_PROPAGATOR_BOXED_IN_MULT = 10	# When a warlike 'propagator' personality is boxed in aggression is multiplied by this value
+		AI_AGGRESSIVENESS_PROPAGATOR_BOXED_IN_MULT = 20	# When a warlike 'propagator' personality is boxed in aggression is multiplied by this value
+
+#		AI_AGGRESSIVENESS_BOXED_IN_MULT = 4	# When an AI can no longer peacefully expand aggression is multiplied by this value
+		AI_AGGRESSIVENESS_BOXED_IN_MULT = 8	# When an AI can no longer peacefully expand aggression is multiplied by this value
+
+#		AI_AGGRESSIVENESS_NO_COLONY_TARGET_MULT = 2 # When an AI has no immediate colony targets and at least MAX_PLANETS_FOR_BUDGET_FACTOR planets (but is not boxed in) aggression is multiplied by this value
+		AI_AGGRESSIVENESS_NO_COLONY_TARGET_MULT = 4 # When an AI has no immediate colony targets and at least MAX_PLANETS_FOR_BUDGET_FACTOR planets (but is not boxed in) aggression is multiplied by this value
+
+#		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MULT = 0.1		# multiplied by number of techs potential overlord is ahead in
+		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MULT = 0.50
+		
+#		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MAX = 20
+		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MAX = 100
+		
+#		VASSALIZATION_ACCEPTANCE_NUM_POPS = -0.25			# per pop
+		VASSALIZATION_ACCEPTANCE_NUM_POPS = -0.20
+		
+#		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MIN = 1.5
+		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MIN = 0.75
+		
+#		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MULT = 15  # for each 1x over min
+		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MULT = 150
+
+#		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MAX = 100
+		VASSALIZATION_ACCEPTANCE_POWER_DIFFERENCE_MAX = 300
+
+#		VASSALIZATION_ACCEPTANCE_ATTITUDE_ALLIANCE = 20
+		VASSALIZATION_ACCEPTANCE_ATTITUDE_ALLIANCE = 50      # Friendly
+
+#		VASSALIZATION_ACCEPTANCE_ATTITUDE_ATTACK = -1000
+		VASSALIZATION_ACCEPTANCE_ATTITUDE_ATTACK = -300      # Suspicious / Rival / Unfriendly / Hostile
+
+#		VASSALIZATION_ACCEPTANCE_OTHER_ATTITUDE = -20
+		VASSALIZATION_ACCEPTANCE_OTHER_ATTITUDE = -100       # Neutral / Wary
+
+#		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MULT = 0.2
+		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MULT = 0.4
+
+#		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MAX = 20
+		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MAX = 100
+
+#		VASSALIZATION_ACCEPTANCE_DISTANCE_MULT = -0.5 # per 1 border distance
+		VASSALIZATION_ACCEPTANCE_DISTANCE_MULT = -1
+		
+#		WAR_EXHAUSTION_TO_INTERVENE = 0.25		# AI may want to intervene to help empires with this war exhaustion or higher
+		WAR_EXHAUSTION_TO_INTERVENE = 0.01		# AI may want to intervene to help empires with this war exhaustion or higher
+
+#		MAX_CLAIM_DISTANCE = 4					# Max number of jumps away AI will make claims on
+		MAX_CLAIM_DISTANCE = 99					# Max number of jumps away AI will make claims on
+
+#		MAX_CLAIM_DISTANCE_SUBJECT = 2			# Max number of jumps away AI subjects will make claims on
+		MAX_CLAIM_DISTANCE_SUBJECT = 99			# Max number of jumps away AI subjects will make claims on
+
+#		DIPLO_ACTION_REPEAT_DELAY = 360					# number of days before the ai will try to repeat a proposal
+		DIPLO_ACTION_REPEAT_DELAY = 3600				# number of days before the ai will try to repeat a proposal
+	}
